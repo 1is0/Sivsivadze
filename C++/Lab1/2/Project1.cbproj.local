@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.757,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit5.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitRectangle.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.500,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit5.h=C:\Users\ivank\Documents\RAD Studio\Projects\Unit5.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.840,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitRectangle.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit5.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.766,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit2.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitFigure.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.386,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit2.h=C:\Users\ivank\Documents\RAD Studio\Projects\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.688,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitPolygon.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.857,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit6.h=C:\Users\ivank\Documents\RAD Studio\Projects\Unit6.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.057,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Project1.cbproj=C:\Users\ivank\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,=C:\Users\ivank\Documents\RAD Studio\Projects\Unit5.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.688,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitPolygon.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit4.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.062,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unitcircle.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.481,=C:\Users\ivank\Documents\RAD Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.851,=C:\Users\ivank\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.456,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitSquare.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit6.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.679,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit1.h=C:\Users\ivank\Documents\RAD Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.412,=C:\Users\ivank\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.116,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitFigure.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.577,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit4.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitPolygon.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.679,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit1.cpp=C:\Users\ivank\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.343,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit4.cpp=C:\Users\ivank\Documents\RAD Studio\Projects\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.552,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit6.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitSquare.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.679,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit1.dfm=C:\Users\ivank\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.386,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit2.cpp=C:\Users\ivank\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.791,=C:\Users\ivank\Documents\RAD Studio\Projects\Project1.res</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.857,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit6.cpp=C:\Users\ivank\Documents\RAD Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.552,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit6.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitSquare.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.062,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unitcircle.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit3.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.116,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitFigure.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.456,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitSquare.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit6.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.766,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit2.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitFigure.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.840,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitRectangle.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit5.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.343,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit4.h=C:\Users\ivank\Documents\RAD Studio\Projects\Unit4.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.012,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit3.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unitcircle.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.577,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit4.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitPolygon.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.813,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit3.h=C:\Users\ivank\Documents\RAD Studio\Projects\Unit3.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.012,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit3.h=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unitcircle.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.139,=C:\Users\ivank\Documents\RAD Studio\Projects\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.480,=C:\Users\ivank\Documents\RAD Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.757,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit5.cpp=C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\UnitRectangle.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.813,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit3.cpp=C:\Users\ivank\Documents\RAD Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.500,C:\PTUIR\2 semestr\OAiP\Projects\Lr1\2\Unit5.cpp=C:\Users\ivank\Documents\RAD Studio\Projects\Unit5.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
