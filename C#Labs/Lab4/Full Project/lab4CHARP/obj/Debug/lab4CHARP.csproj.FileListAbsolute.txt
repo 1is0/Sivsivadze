@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\bin\Debug\lab4CHARP.exe.config
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\bin\Debug\lab4CHARP.exe
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\bin\Debug\lab4CHARP.pdb
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\obj\Debug\lab4CHARP.csprojAssemblyReference.cache
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\obj\Debug\lab4CHARP.Properties.Resources.resources
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\obj\Debug\lab4CHARP.csproj.GenerateResource.cache
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\obj\Debug\lab4CHARP.exe
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\obj\Debug\lab4CHARP.pdb
+C:\Users\User\source\repos\lab4CHARP\lab4CHARP\obj\Debug\lab4CHARP.Form1.resources
