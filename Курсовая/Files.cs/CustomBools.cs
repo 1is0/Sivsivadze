@@ -40,5 +40,32 @@ namespace Курсач
             }
             return false;
         }
+        static public bool isUpper(char a)
+        {
+            if ((a >= 65 && a <= 90))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        static public string myToUpper(string a)
+        {
+            string b = "";
+            for(int i = 0; i < a.Length; i++)
+            {
+                if(isLower(a[i]))
+                {
+                    b += Convert.ToChar(a[i] - 32);
+                }
+                else
+                {
+                    b += Convert.ToChar(a[i]);
+                }
+            }
+            return b;
+        }
+
+
     }
 }

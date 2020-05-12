@@ -15,10 +15,12 @@ namespace Курсач
 
             for(int i = 0; i < str.Length; i++)
             {
+                /*
                 if (CustomBools.isSpace(str[i]))
                 {
                     str2 += ' ';
                 }
+                
                 if (CustomBools.isAlpha(str[i]) && CustomBools.isLower(str[i]))
                 {
                     if (str[i] + n > 122)
@@ -30,7 +32,7 @@ namespace Курсач
                         str2 += Convert.ToChar(str[i] + n);
                     }
                 }
-                else if (CustomBools.isAlpha(str[i]) && !CustomBools.isLower(str[i]))
+                else*/ if (CustomBools.isAlpha(str[i]) && !CustomBools.isLower(str[i]))
                     if (str[i] + n > 90)
                     {
                         str2 += Convert.ToChar(str[i] - 26 + n);
@@ -49,8 +51,8 @@ namespace Курсач
         public static string decrypt(string str, int n)
         {
             string str2 = "";
-            for (int i = 0; i < str.Length; i++)
-            {
+           for (int i = 0; i < str.Length; i++)
+            {/*
                 if (CustomBools.isSpace(str[i]))
                 {
                     str2 += ' ';
@@ -66,7 +68,7 @@ namespace Курсач
                         str2 += Convert.ToChar(str[i] - n);
                     }
                 }
-                else if (CustomBools.isAlpha(str[i]) && !CustomBools.isLower(str[i]))
+                else*/ if (CustomBools.isAlpha(str[i]) && !CustomBools.isLower(str[i]))
                     if (str[i] - n <65)
                     {
                         str2 += Convert.ToChar(str[i] + 26 - n);
@@ -78,10 +80,6 @@ namespace Курсач
                     }
                 
             }
-
-
-
-
                 return str2;
         }
 
