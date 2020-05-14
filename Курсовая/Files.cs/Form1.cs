@@ -10,18 +10,9 @@ using System.Windows.Forms;
 namespace Курсач
 {
 
-    
-
-
-
-
-
 
     public partial class Form1 : Form
     {
-
-
-
 
         public Form1()
         {
@@ -45,18 +36,10 @@ namespace Курсач
                 textBox2.Visible = true;
                 return;
             }
-            for (int i = 0; i < textBox1.Text.Length; i++)
-            {
-                if (!CustomBools.isAlpha(textBox1.Text[i]))
-                {
-                    textBox2.Text = "Неверный ввод";
-                    textBox2.Visible = true;
-                    return;
-                }
-            }
             if(radioButton1.Checked)
             {
-                if(!Int32.TryParse(textBox3.Text, out int a))
+               
+                if (!Int32.TryParse(textBox3.Text, out int a))
                 {
                     textBox2.Text = "Неверный ввод";
                     textBox2.Visible = true;
@@ -71,69 +54,86 @@ namespace Курсач
                 }
                 if (comboBox1.Text == "Зашифровать")
                 {
-                    textBox1.Text = ROT1.encrypt(textBox1.Text, Convert.ToInt32(textBox3.Text));
+                    outputBox.Text = ROT1.encrypt(CustomBools.myToUpper(textBox1.Text), Convert.ToInt32(textBox3.Text) % 26);
                 }
-                else if (comboBox1.Text == "Расшифровать")
+                else
                 {
-                    textBox1.Text = ROT1.decrypt(textBox1.Text, Convert.ToInt32(textBox3.Text));
+                    outputBox.Text = ROT1.decrypt(CustomBools.myToUpper(textBox1.Text), Convert.ToInt32(textBox3.Text) % 26);
                 }
             }
             if(radioButton2.Checked)
             {
-                if(textBox3.Text.Length > textBox1.Text.Length)
+                if (Vigenere.inputChecker(textBox1.Text) && Vigenere.inputChecker(textBox3.Text))
+                {
+
+                    if (comboBox1.Text == "Зашифровать")
+                    {
+                        outputBox.Text = Vigenere.encrypt(CustomBools.myToUpper(textBox1.Text), CustomBools.myToUpper(textBox3.Text));
+                    }
+                    else
+                    {
+                        outputBox.Text = Vigenere.decrypt(CustomBools.myToUpper(textBox1.Text), CustomBools.myToUpper(textBox3.Text));
+                    }
+                }
+                else
                 {
                     textBox2.Text = "Неверный ввод";
                     textBox2.Visible = true;
                     return;
                 }
-           
-                if (comboBox1.Text == "Зашифровать")
-                {
-                    textBox1.Text = Vigenere.encrypt(CustomBools.myToUpper(textBox1.Text), CustomBools.myToUpper(textBox3.Text));
-                }
             }
-            
+            if(radioButton3.Checked)
+            {
+                if(comboBox1.Text == "Зашифровать")
+                {
+                   if(!Morze.encInputChecker(textBox1.Text))
+                   {
+                        textBox2.Text = "Неверный ввод";
+                        textBox2.Visible = true;
+                        return;
+                   }
+                   else
+                    {
+                        outputBox.Text = Morze.encrypt(textBox1.Text);
+                    }
+                }
+                else
+                {
+                    if (!Morze.decInputChecker(CustomBools.myToUpper(textBox1.Text)))
+                    {
+                        textBox2.Text = "Неверный ввод";
+                        textBox2.Visible = true;
+                        return;
+                    }
+                    else
+                    {
+                        outputBox.Text = Morze.decrypt(textBox1.Text);
+                    }
+                }
+                
+            }
+       
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            CustomBools.myToUpper(textBox1.Text);
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            
-
-
-
-
-
-
+            textBox3.Visible = false;
+            textBox5.Visible = true;
             textBox2.Visible = false;
             textBox4.Visible = false;
             comboBox1.Text = "Выберите действие";
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if(radioButton1.Checked)
             {
+                textBox5.Text = "Введите текст(только латинские буквы, без пробелов)";
+                textBox5.Visible = true;
+                textBox3.Visible = true;
                 textBox4.Text = "Введите значение сдвига (Целое число > 0)";
                 textBox4.Visible = true;
             }
@@ -143,24 +143,37 @@ namespace Курсач
         {
             if (radioButton2.Checked)
             {
+                textBox5.Text = "Введите текст(только латинские буквы, без пробелов)";
+                textBox5.Visible = true;
+                textBox3.Visible = true;
                 textBox4.Text = "Введите ключевое слово";
                 textBox4.Visible = true;
             }
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
+            if (radioButton3.Checked)
+            {
+                if(comboBox1.Text == "Зашифровать")
+                {
+                    textBox5.Text = "Введите текст(латинские буквы и цифры)";
+                    textBox5.Visible = true;
+                }
+                else
+                {
+                    textBox5.Text = "Введите текст на азбуке морзе(один пробел между буквами, три - между словами)";
+                    textBox5.Visible = true;
+                }
+               
 
-        }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
+                textBox3.Visible = false;
+                textBox4.Text = "Введите ключевое слово";
+                textBox4.Visible = false;
+            }
         }
     }
 }

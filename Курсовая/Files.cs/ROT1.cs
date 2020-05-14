@@ -72,8 +72,7 @@ namespace Курсач
                     if (str[i] - n <65)
                     {
                         str2 += Convert.ToChar(str[i] + 26 - n);
-                    }
-                 
+                    }             
                     else
                     {
                         str2 += Convert.ToChar(str[i] - n);
@@ -82,9 +81,6 @@ namespace Курсач
             }
                 return str2;
         }
-
-
-
 
     }
 }

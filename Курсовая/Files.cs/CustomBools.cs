@@ -60,7 +60,7 @@ namespace Курсач
                 }
                 else
                 {
-                    b += Convert.ToChar(a[i]);
+                    b += Convert.ToString(a[i]);
                 }
             }
             return b;
