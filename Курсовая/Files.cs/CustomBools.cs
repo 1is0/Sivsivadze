@@ -8,9 +8,50 @@ namespace Курсач
 {
     class CustomBools
     {
+        public static bool secondFormOpened = false;
+
+
+        public static bool alphaChecker(string str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (!CustomBools.isAlpha(str[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
+
+        }
+
+        public static bool spaceChecker(string str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (!CustomBools.isSpace(str[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static bool numericChecker(string str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (!CustomBools.isNumeric(str[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+
         static public bool isAlpha(char a)
         {
-            if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122))
+            if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122) || a ==' ')
             {
                 return true;
             }

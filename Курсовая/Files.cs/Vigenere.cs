@@ -8,10 +8,26 @@ namespace Курсач
 {
     class Vigenere
     {
-        public static string encrypt(string str, string keyinput)
+        public static string encrypt(string n, string m)
         {
             string solution="";
             string key = "";
+            string str = "";
+            string keyinput = "";
+            for(int i = 0; i < n.Length; i++)
+            {
+                if(n[i]!=' ')
+                {
+                    str += n[i];
+                }
+            }
+            for (int i = 0; i < m.Length; i++)
+            {
+                if (m[i] != ' ')
+                {
+                    keyinput += m[i];
+                }
+            }
             string[,] table= new string[26, 26];
             table[0, 0] = "A";
 
@@ -53,20 +69,33 @@ namespace Курсач
                 }
             }
            for(int i = 0; i < key.Length; i++)
-            {
-                solution += table[Convert.ToInt32(key[i]) - 65, Convert.ToInt32(str[i]) - 65];
-            }
-
-
-
-            return solution;
+           {
+               solution += table[Convert.ToInt32(key[i]) - 65, Convert.ToInt32(str[i]) - 65];
+           }
+           return solution;
         }
 
 
-        public static string decrypt(string str, string keyinput)
+        public static string decrypt(string n, string m)
         {
             string solution = "";
             string key = "";
+            string str = "";
+            string keyinput = "";
+            for (int i = 0; i < n.Length; i++)
+            {
+                if (n[i] != ' ')
+                {
+                    str += n[i];
+                }
+            }
+            for (int i = 0; i < m.Length; i++)
+            {
+                if (m[i] != ' ')
+                {
+                    keyinput += m[i];
+                }
+            }
             string[,] table = new string[26, 26];
             table[0, 0] = "A";
           
@@ -100,7 +129,6 @@ namespace Курсач
                     key += keyinput[i];
                 }
             }
-
             for(int i = 0; i < key.Length; i++)
             {
                 for(int j = 0; j < 26; j++)
@@ -110,27 +138,8 @@ namespace Курсач
                         solution += Convert.ToChar(j + 65);
                     }
                 }
-                /*solution += table[Convert.ToInt32(key[i]) - 65, Convert.ToInt32(str[i]) - 65]*/
             }
-
-
-
             return solution;
         }
-
-        public static bool inputChecker(string str)
-        {
-            for (int i = 0; i < str.Length; i++)
-            {
-                if(!CustomBools.isAlpha(str[i]))
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-
-
     }
 }
