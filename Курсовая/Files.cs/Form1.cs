@@ -31,10 +31,7 @@ namespace Курсач
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!CustomBools.secondFormOpened)
-            {
                 Close();
-            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,6 +49,16 @@ namespace Курсач
             if (!CustomBools.secondFormOpened)
             {
                 Form4 newForm = new Form4();
+                newForm.Show();
+                CustomBools.secondFormOpened = true;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (!CustomBools.secondFormOpened)
+            {
+                Form5 newForm = new Form5();
                 newForm.Show();
                 CustomBools.secondFormOpened = true;
             }

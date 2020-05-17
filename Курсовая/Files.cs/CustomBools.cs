@@ -47,6 +47,45 @@ namespace Курсач
             return true;
         }
 
+        public static string convertToBinary(int a)
+        {
+            string str = "";
+            while (a > 0)
+            {
+                str = Convert.ToString(a % 2) + str;
+                a /= 2;
+            }
+            while(str.Length!=8)
+            {
+                str = '0' + str;
+            }
+            return str;
+        }
+
+
+        public static int convertToDecimal(string a)
+        {
+        int degree = 0;
+        int solution = 0;
+            for(int i = 7; i >=0; i--)
+            {
+                if(a[i] == '1')
+                {
+                    solution += Convert.ToInt32(Math.Pow(2, degree));
+                   
+                }
+                degree++;
+            }
+            return solution;
+        }
+
+
+
+
+
+
+
+
 
 
         static public bool isAlpha(char a)
