@@ -1,0 +1,132 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+#include <fstream>
+#include "Unit1.h"
+#include <string>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+
+using namespace std;
+TForm1 *Form1;
+
+   class Car
+{
+		 public:
+		 string county;
+		 string mark;
+		 string model;
+		 string engineType;
+		 string price;
+		 string consumption;
+		 string maxSpeed;
+		 string acceleration;
+};
+
+ int arrSize = 0;
+ Car *stats = new Car[8];
+ string temp;
+ string path;
+
+
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormCreate(TObject *Sender)
+{
+
+		ifstream myfile("input.txt");
+		myfile >> arrSize;
+		for(int i = 0; i < 8; i++)
+		{     myfile>> stats[i].county;
+			  myfile >> stats[i].mark;
+			  myfile >> stats[i].model;
+			  myfile >> stats[i].engineType;
+			  myfile >> stats[i].price;
+			  myfile >> stats[i].consumption;
+			  myfile >> stats[i].maxSpeed;
+			  myfile >> stats[i].acceleration;
+		}
+		for(int i =0; i <8; i++)
+		{   temp =  stats[i].mark +' '+ stats[i].model;
+			ComboBox1 -> Items -> Add(temp.c_str());
+		}
+		bool isExist;
+		Image1->AutoSize = false;
+
+
+			for(int i = 0; i <8; i++)
+			{
+            isExist = false;
+				for(int j =0; j < ComboBox1 -> Items -> Count ; j++)
+				{
+					ComboBox2 -> ItemIndex = j;
+					if(ComboBox2 -> Text == stats[i].county.c_str())
+					{
+					   isExist = true;
+					}
+
+				}
+                if(!isExist)
+					{
+						ComboBox2 -> Items -> Add(stats[i].county.c_str());
+						isExist = false;
+					}
+            }
+			ComboBox2 -> ItemIndex = -1;
+            ComboBox -> Text = "Sort by country"
+
+		ComboBox2 -> Items -> Add("NONE");
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::ComboBox1Change(TObject *Sender)
+{
+	 Edit1 -> Text = "";
+			Edit2 -> Text = "";
+			for(int i = 0; i < 8; i++)
+			{
+				temp =  stats[i].mark +' '+ stats[i].model;
+				if(ComboBox1 ->Text == temp.c_str())
+				{
+					Edit1 -> Text =   stats[i].county.c_str();
+					Edit2 -> Text =   stats[i].mark.c_str();
+					Edit3 -> Text =   stats[i].model.c_str();
+					Edit4 -> Text =   stats[i].engineType.c_str();
+					Edit5 -> Text =   stats[i].price.c_str();
+					Edit6 -> Text =   stats[i].consumption.c_str();
+					Edit7 -> Text =   stats[i].maxSpeed.c_str();
+					Edit8 -> Text =   stats[i].acceleration.c_str();
+					path = "Materials/" + temp + ".bmp";
+					Image1->Picture->LoadFromFile(path.c_str());
+				}
+
+            }
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::ComboBox2Change(TObject *Sender)
+{   ComboBox1 -> Clear();
+	for(int i =0; i < 8; i++)
+	{   if(ComboBox2 -> Text == "NONE")
+		{
+            for(int i =0; i <8; i++)
+			{   temp =  stats[i].mark +' '+ stats[i].model;
+				ComboBox1 -> Items -> Add(temp.c_str());
+			}
+			return;
+		}
+		if(ComboBox2 -> Text == stats[i].county.c_str())
+		{
+           temp =  stats[i].mark +' '+ stats[i].model;
+			ComboBox1 -> Items -> Add(temp.c_str());
+        }
+    }
+}
+//---------------------------------------------------------------------------
+
