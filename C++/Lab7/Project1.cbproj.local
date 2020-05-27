@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.786,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.318,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.045,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.899,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020.05.27 14:39:05.048,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020.05.27 14:39:05.373,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020.05.27 14:44:01.196,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2020.05.27 14:44:12.283,C:\Users\User\Documents\Embarcadero\Studio\Projects\Lab7\Unit2.cpp=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2020.05.27 14:44:12.283,C:\Users\User\Documents\Embarcadero\Studio\Projects\Lab7\Unit2.h=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>2020.05.27 15:15:38.137,C:\Users\User\Documents\Embarcadero\Studio\Projects\Lab7\Unit1.h=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2020.05.27 15:15:38.137,C:\Users\User\Documents\Embarcadero\Studio\Projects\Lab7\Unit1.cpp=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020.05.27 15:15:38.137,C:\Users\User\Documents\Embarcadero\Studio\Projects\Lab7\Unit1.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020.05.27 16:46:30.994,C:\Users\User\Documents\Embarcadero\Studio\Projects\Lab7\Project1PCH1.h=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020.05.27 16:46:32.141,C:\Users\User\Documents\Embarcadero\Studio\Projects\Lab7\Project1.cbproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
